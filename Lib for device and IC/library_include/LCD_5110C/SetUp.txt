@@ -1,0 +1,2 @@
+SetUp SPI1   FullDuplex Mode or Only Transmits Master
+Set 3 Pin OutPut: define name: RST, DC, CE 
