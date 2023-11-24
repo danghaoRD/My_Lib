@@ -17,3 +17,4 @@
         
         Đây là cách sử dụng cú pháp chỉ khai báo biến mà không khởi tạo nó ngay lập tức.
         Trong trường hợp này, giá trị ban đầu của các thành phần trong biến mqtt_cfg sẽ phụ thuộc vào ngữ cảnh và nơi biến được khai báo. Nó có thể là giá trị mặc định của kiểu dữ liệu (đối với kiểu dữ liệu số nguyên), hoặc giá trị ngẫu nhiên (đối với các kiểu dữ liệu không được khởi tạo).
+  extern "C"  main
