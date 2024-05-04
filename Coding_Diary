@@ -18,3 +18,7 @@
         Đây là cách sử dụng cú pháp chỉ khai báo biến mà không khởi tạo nó ngay lập tức.
         Trong trường hợp này, giá trị ban đầu của các thành phần trong biến mqtt_cfg sẽ phụ thuộc vào ngữ cảnh và nơi biến được khai báo. Nó có thể là giá trị mặc định của kiểu dữ liệu (đối với kiểu dữ liệu số nguyên), hoặc giá trị ngẫu nhiên (đối với các kiểu dữ liệu không được khởi tạo).
   extern "C"  main
+05/04/2024
+     Forward declaration được sử dụng khi bạn cần chỉ ra sự tồn tại của một lớp mà không cần phải bao gồm toàn bộ nội dung của lớp đó.
+   Thường thì nó được sử dụng khi định nghĩa của lớp được cung cấp trong một file .cpp riêng biệt hoặc trong một file .h khác mà đã được bao gồm (included) vào file hiện tại.
+      cmt: sao cái này hay vậy mà bây giờ mình mới biết nhỉ. cũng ít khi thấy mấy anh khác trong c.ty dùng ???
