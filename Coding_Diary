@@ -22,3 +22,13 @@
      Forward declaration được sử dụng khi bạn cần chỉ ra sự tồn tại của một lớp mà không cần phải bao gồm toàn bộ nội dung của lớp đó.
    Thường thì nó được sử dụng khi định nghĩa của lớp được cung cấp trong một file .cpp riêng biệt hoặc trong một file .h khác mà đã được bao gồm (included) vào file hiện tại.
       cmt: sao cái này hay vậy mà bây giờ mình mới biết nhỉ. cũng ít khi thấy mấy anh khác trong c.ty dùng ???
+16/10/2024:
+   alignment và misaligned:
+        một số MCU sẽ có cơ chế căn chỉnh và không căn chỉnh bộ nhớ khi tạo biến và cấp phát vùng nhớ.  các dòng mới như ARM sẽ có cơ chế dịch đẻ khi gán/làm việc với các mảng bị căn chỉnh sẽ không bị ảnh hưởng.
+17/10/2024:
+    khai báo con trỏ rống:
+    việc khai báo và không cấp phát địa chỉ luôn sẽ đãn tới 
+    MCU sẽ không tự động trỏ con trỏ đến một vùng nhớ trống 
+        Để tránh các lỗi này, bạn nên:
+        Khởi tạo con trỏ về NULL hoặc sử dụng malloc để cấp phát bộ nhớ.
+        Kiểm tra con trỏ trước khi sử dụng nó để tránh truy cập vào vùng bộ nhớ không hợp lệ.
