@@ -32,3 +32,10 @@
         Để tránh các lỗi này, bạn nên:
         Khởi tạo con trỏ về NULL hoặc sử dụng malloc để cấp phát bộ nhớ.
         Kiểm tra con trỏ trước khi sử dụng nó để tránh truy cập vào vùng bộ nhớ không hợp lệ.
+03/02/2025:
+  Cpp:  overloading and overriding
+      Tiêu chí	      Overloading	                                                          Overriding
+      Định nghĩa	    Tạo nhiều hàm cùng tên nhưng tham số khác nhau	                      Lớp con định nghĩa lại phương thức của lớp cha
+      Chữ ký hàm	    Khác nhau về số lượng hoặc kiểu tham số	                              Giống hệt phương thức trong lớp cha
+      Sử dụng từ khóa	Không cần từ khóa đặc biệt	                                          Cần từ khóa virtual trong lớp cha và override trong lớp con
+      Mục đích	      Cung cấp nhiều phiên bản hàm cùng tên	                                Cung cấp cách triển khai khác cho phương thức đã có trong lớp cha
