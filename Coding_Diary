@@ -39,3 +39,19 @@
       Chữ ký hàm	    Khác nhau về số lượng hoặc kiểu tham số	                              Giống hệt phương thức trong lớp cha
       Sử dụng từ khóa	Không cần từ khóa đặc biệt	                                          Cần từ khóa virtual trong lớp cha và override trong lớp con
       Mục đích	      Cung cấp nhiều phiên bản hàm cùng tên	                                Cung cấp cách triển khai khác cho phương thức đã có trong lớp cha
+  auto:   tự đặt kiểu dữ liệu
+  for-each: vòng for chạy hết phần tử của một mảng
+                                                            for (element_type variable : container) {
+                                                                  // Code to execute for each element
+                                                              }
+  Initializer List:    khởi tạo các parameter cùng với constructor
+                      hữu ích khi biến là con trỏ hoặc const so với đưua vào body của constructor
+                      class Mqtt {
+                      private:
+                          const char *const clientId;  // Const member
+                      
+                      public:
+                          Mqtt(const char *clientId) : clientId(clientId) {} // Required
+                      };
+
+
